@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBorges Serviços Automotivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1><span>D'</span>BORGES Reparação Automotiva</h1>
+    </div>
+        
+            <div id="name" class="form-div">
+                <h2>Agende o reparo do seu carro!</h2>
+
+                <form>
+                <label for="nome">Digite o seu nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+
+                <label for="email">Digite o seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" required>
+
+                <label for="telefone">Digite o seu telefone para contato:</label>
+                <input inputmode="numeric" pattern="[0-9]*" type="tel" id="telefone" name="telefone" placeholder="Telefone (Apenas números)" required>
+
+                <label for="veiculo">Veículo:</label>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Marca, modelo, série e ano" required>
+
+                <label for="problem">Descreva o seu problema:</label>
+                <textarea id="problem" name="problem" placeholder="Descreva detalhadamente o problema que está enfrentando..." required></textarea>
+
+                <button type="submit">Agendar</button>
+                </form>
+            </div>
+</body>
+</html>
