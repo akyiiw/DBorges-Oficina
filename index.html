@@ -15,24 +15,33 @@
             <div id="name" class="form-div">
                 <h2>Agende o reparo do seu carro!</h2>
 
-                <form>
+                <form class="class-form" onsubmit="return submited()">
                 <label for="nome">Digite o seu nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
 
                 <label for="email">Digite o seu e-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" required>
+                <input type="email" id="email" name="email" placeholder="Seu endereço de e-mail" required>
 
                 <label for="telefone">Digite o seu telefone para contato:</label>
-                <input inputmode="numeric" pattern="[0-9]*" type="tel" id="telefone" name="telefone" placeholder="Telefone (Apenas números)" required>
+                <input inputmode="numeric" pattern="[0-9]*" type="tel" id="telefone" name="telefone" placeholder="Seu telefone (Apenas números)" required>
 
                 <label for="veiculo">Veículo:</label>
-                <input type="text" id="veiculo" name="veiculo" placeholder="Marca, modelo, série e ano" required>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Marca, modelo, série e ano do seu carro" required>
 
                 <label for="problem">Descreva o seu problema:</label>
                 <textarea id="problem" name="problem" placeholder="Descreva detalhadamente o problema que está enfrentando..." required></textarea>
 
-                <button type="submit">Agendar</button>
+                <button type="submit">Cadastrar</button>
                 </form>
             </div>
+
+        <script>
+            const form = document.getElementByClass('class-form');
+
+            function submited() {
+                alert('Cadastro concluído com sucesso!');
+            }
+
+        </script>
 </body>
 </html>
